@@ -133,7 +133,7 @@ function claim($token)
 	}
 
 echo "AUTO REGISTER, KLAIM VOUCHER, GOPAY SENDER V3\n";
-print "Thanks to : Muhammad Ikhsan, Muhammad Jumadi, Muhammad Irsad\n\n";
+print "Thanks to : Reynaldi MM, EpenDorCrot,\n\n";
 echo "[+] Masukan 62 untuk ID dan 1 untuk US\n";
 echo "[+] Nomor: ";
 $nope = trim(fgets(STDIN));

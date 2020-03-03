@@ -13,7 +13,7 @@ $header[] = "X-User-Locale: id_ID";
 $header[] = "X-Location:-6.2614926,106.8105997";
 $header[] = "X-Location-Accuracy: 48.544";
 if ($pin):
-$header[] = "pin: $pin";    
+$header[] = "pin: 789565 $pin";    
     endif;
 if ($token):
 $header[] = "Authorization: Bearer $token";
@@ -131,6 +131,32 @@ function claim($token)
 		return false;
 		}
 	}
+function claim($token)
+	{
+	$data = '{"promo_code":"COBAGOCAR"}';
+	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
+	if ($claim['success'] == 1)
+		{
+		return $claim['data']['message'];
+		}
+	  else
+		{
+		return false;
+		}
+	}
+function claim($token)
+	{
+	$data = '{"promo_code":"COBAGORIDE"}';
+	$claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
+	if ($claim['success'] == 1)
+		{
+		return $claim['data']['message'];
+		}
+	  else
+		{
+		return false;
+		}
+	}
 
 echo "AUTO REGISTER, KLAIM VOUCHER, GOPAY SENDER V3\n";
 print "Thanks to : Reynaldi MM, EpenDorCrot,\n\n";
@@ -163,7 +189,34 @@ if ($register == false)
 			{
 			echo $claim . "\n";
 			}
-		 
+
+
+           else
+		{
+		echo "[+] Mencoba klaim COBAGOCAR\n";
+		$claim = claim($verif);
+		if ($claim == false)
+			{
+			echo "[!] Gagal Klaim\n";
+			}
+		  else
+			{
+			echo $claim . "\n";
+			}
+
+           
+	   else
+		{
+		echo "[+] Mencoba klaim COBAGORIDE\n";
+		$claim = claim($verif);
+		if ($claim == false)
+			{
+			echo "[!] Gagal Klaim\n";
+			}
+		  else
+			{
+			echo $claim . "\n";
+			}	 
 	}
      function fetch_value($str,$find_start,$find_end) {
 	$start = @strpos($str,$find_start);
@@ -217,7 +270,7 @@ function gopaysend($a, $no){
 	curl_setopt($ch, CURLOPT_POST, 1);
 
 	$headers = array();
-	$headers[] = 'pin: 050299';
+	$headers[] = 'pin: 789565';
 	$headers[] = 'Accept: application/json';
 	$headers[] = 'X-Session-ID: 1d8ac538-2757-44ae-a3a0-e16b2b3912eb';
 	$headers[] = 'D1: 93:F5:0A:32:29:A8:B0:97:AA:3B:B4:09:01:53:13:E7:BF:9D:2A:0D:B6:8D:EC:D8:4F:52:D1:C9:87:CF:0E:04';
@@ -260,11 +313,11 @@ function gopaysend($a, $no){
 	$headers[] = 'X-AppVersion: 3.37.2';
 	$headers[] = 'X-AppId: com.gojek.app';
 	$headers[] = 'Authorization: Bearer 2f013e66-a8b1-4434-83ee-b2948d744158';
-	$headers[] = 'X-DeviceOS: Android,7.1.2';
+	$headers[] = 'X-DeviceOS: Android,9.0';
 	$headers[] = 'User-uuid: 604374760';
 	$headers[] = 'X-DeviceToken: fWIBbGVnreI:APA91bH1IXMz51gOyQz466ggvicFPpyAYzUpr2FCzzR3NWXiykL-PAMPpLLEtAuOq3F2tqBPQ_T-WFetrsRzj_ef6tY7-zfiQrTVfP44QqKNi9Br-07VUSkqcHhoSIlf4AWoc-HJWvVY';
 	$headers[] = 'X-PushTokenType: FCM';
-	$headers[] = 'X-PhoneModel: xiaomi,Redmi 4x';
+	$headers[] = 'X-PhoneModel: Samsung,Samsung Note 10 Plus';
 	$headers[] = 'Accept-Language: id-ID';
 	$headers[] = 'X-User-Locale: id_ID';
 	$headers[] = 'X-M1: 1:__a6b9bcaf8b864d81a1f39ce298a6fbe9,2:dea668397d44,3:1564554094307-3029908080826701121,4:9884,5:msm8937|1401|8,6:04:B1:67:B7:B6:59,7:<wifi is turned off>,8:720x1280,9:passive\,gps\,network,10:1,11:SVF2bUhIRWFxTE5vR1JyVUltdkd2REpkb3J2clV4eAA=';

@@ -286,13 +286,14 @@ echo "".$oce."\n";
 	  	 }
 
          setpin:
-         echo "\n".color("nevy","?] Mau set pin?: ");
+         echo "\n".color("yellow","?] SET PIN DULU BIAR AMAN!!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
-         if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","===============(SET PIN)===============")."\n";
-         $data2 = '{"pin":"220600"}';
+         if($pilih1 == "y" || $pilih1 == "Y"){
+         //if($pilih1 == "y" && strpos($no, "628")){
+         echo color("white","========( PIN MU = 112233 )========")."\n";
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp set pin: ";
+         echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
@@ -301,26 +302,21 @@ echo "".$oce."\n";
          }else{
          echo color("red","-] GAGAL!!!\n");
          }
-         else{
+         }
          goto setpin;
          }
          }else{
-         echo color("red","-] Otp yang anda input salah");
+            echo color("red","-] Otp yang anda input salah");
+            echo"\n==================================\n\n";
+            echo color("yellow","!] Silahkan input kembali\n");
+            goto otp;
+            }
+         }else{
+         echo color("red","-] Nomor sudah teregistrasi");
          echo"\n==================================\n\n";
-         echo color("yellow","!] Silahkan input kembali\n");
-         goto otp;
+         echo color("yellow","!] Silahkan registrasi kembali\n");
+         goto ulang;
          }
-         }else{
-         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
-         echo "\nMau ulang? (y/n): ";
-         $pilih = trim(fgets(STDIN));
-         if($pilih == "y" || $pilih == "Y"){
-         echo "\n==============Register==============\n";
-         goto ulang;
-         }else{
-         echo "\n==============Register==============\n";
-         goto ulang;
-  }
- }
-}
-echo change()."\n"; ?>
+//  }
+
+// echo change()."\n";

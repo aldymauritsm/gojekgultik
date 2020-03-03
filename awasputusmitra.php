@@ -27,7 +27,7 @@ function change(){
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
         echo color("red","===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc BELANJAYUK");
+        echo "\n".color("yellow","!] Claim voc GOFOODBOBA07");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -40,7 +40,7 @@ function change(){
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("yellow","!] Claim voc JEPANG");
+        echo "\n".color("yellow","!] Claim voc GOFOODBOBA10");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -54,7 +54,7 @@ function change(){
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$messageboba10);
-        echo "\n".color("yellow","!] Claim voc Gofood");
+        echo "\n".color("yellow","!] Claim voc GOFOODBOBA19");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -69,7 +69,7 @@ function change(){
         }else{
         echo "\n".color("green","+] Message: ".$messageboba19);
         goride:
-        echo "\n".color("yellow","!] Claim voc Goride");
+        echo "\n".color("yellow","!] Claim voc AYOCOBAGOJEK");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -79,7 +79,7 @@ function change(){
         $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDE"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
-        echo "\n".color("yellow","!] Claim voc Gocar");
+        echo "\n".color("yellow","!] Claim voc COBAINGOJEK");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -131,11 +131,11 @@ function change(){
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("nevy","?] Mau set pin gopay sekalian ?: ");
+         echo "\n".color("nevy","?] Mau set pin?: ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" && strpos($no, "628")){
          echo color("red","===============(SET PIN)===============")."\n";
-         $data2 = '{"pin":"789565"}';
+         $data2 = '{"pin":"220600"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp set pin: ";
          $otpsetpin = trim(fgets(STDIN));

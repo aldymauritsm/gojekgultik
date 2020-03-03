@@ -1,7 +1,5 @@
 <?php date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]      BISMILLAHIRRAHMANIRRAHIM      []\n");
-echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   []\n");
 
 function change(){
         $nama = nama();

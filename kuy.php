@@ -1,6 +1,5 @@
 <?php date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-
 function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);

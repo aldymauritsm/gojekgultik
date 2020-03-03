@@ -1,7 +1,15 @@
-<?php date_default_timezone_set('Asia/Jakarta');
+<?php
+date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]      BISMILLAHIRRAHMANIRRAHIM      []\n");
-echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   []\n");
+echo color("red"," ===========================\n");
+echo color("red","| Claim Voucher Gojek|\n");
+echo color("red","| Auto create Gojek X Redeem voucher |\n");
+echo color("red","| github: garapancvk |\n");
+echo color("red","| fanspage :garapancvk|\n");
+echo color("red","| Creator : UneXpected!          |\n");
+echo "| Version : Premium X pertalite      |\n";
+echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
+echo " ===========================\n";
 
 function change(){
         $nama = nama();

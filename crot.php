@@ -301,9 +301,6 @@ echo "".$oce."\n";
          }else{
          echo color("red","-] GAGAL!!!\n");
          }
-         
-         }
-         }
          }else{
          goto setpin;
          }

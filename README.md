@@ -1,3 +1,8 @@
-# gojekgultik
+           # gojekgultik
 
-Gojek GULUNG TIKAR
+
+        Gojek GULUNG TIKAR
+
+
+* Makan tuh metode. Gausah sok bro *
+

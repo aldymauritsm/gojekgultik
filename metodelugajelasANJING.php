@@ -18,7 +18,7 @@ echo color("green"," =================================== \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
-        echo color("nevy","?] NO HP: ");
+        echo color("nevy","?] Nomer Hp Fresh ya : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -48,20 +48,20 @@ echo color("green"," =================================== \n");
 			$otptoken = getStr('"otp_token":"','"',$register);
 			echo color("green","+] Verification code has been sent")."\n";
 			otp:
-			echo color("nevy","?] KODE OTP : ");
+			echo color("nevy","?] Kode Otp : ");
 			$otp = trim(fgets(STDIN));
 			$data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
 			$verif = request("/v5/customers/phone/verify", null, $data1);
 			if(strpos($verif, '"access_token"')){
-				echo color("green","+] Register Success\n");
+				echo color("green","+] Regist bCr Berhasil\n");
 				$token = getStr('"access_token":"','"',$verif);
 				$uuid = getStr('"resource_owner_id":',',',$verif);
 				echo color("green","+] Your access token : ".$token."\n\n");
 				save("token.txt",$token);
 				
-				echo color("green","\n===========(REDEEM VOUCHER)===========");
-				echo "\n".color("yellow","!] Claim Voc GOCAR 14K GASPOOLLL");
-				echo "\n".color("yellow","!] Please wait...");
+				echo color("green","\n===========(INJECT VOUCHER)===========");
+				echo "\n".color("yellow","!] Claim Voucher Naik Gocar 14K ");
+				echo "\n".color("yellow","!] Sabar Jing...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
 					sleep(1);
@@ -74,8 +74,8 @@ echo color("green"," =================================== \n");
 				}else{
 					echo "\n".color("red","-] Message: ".$message);
 					
-					echo "\n".color("yellow","!] Claim Voc GORIDE 8K");
-					echo "\n".color("yellow","!] Please wait...");
+					echo "\n".color("yellow","!] Claim Voucher naik GORIDE 8K");
+					echo "\n".color("yellow","!] Sabar Kontol...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
 						sleep(1);
@@ -90,8 +90,8 @@ echo color("green"," =================================== \n");
 						echo "\n".color("red","-] Message: ".$messageboba10);
 					}
 					goride:
-					echo "\n".color("yellow","!] Claim Voc GO FOOD 15+10K");
-					echo "\n".color("yellow","!] Please wait...");
+					echo "\n".color("yellow","!] Claim Voucher Gofood 15rb + 10rb");
+					echo "\n".color("yellow","!] Tunggu Bentar...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
 						sleep(1);
@@ -101,8 +101,8 @@ echo color("green"," =================================== \n");
 					$message1 = fetch_value($goride,'"message":"','"');
 					echo "\n".color("green","+] Message: ".$message1);
 							
-					echo "\n".color("yellow","!] Claim Voc ALFAMART");
-					echo "\n".color("yellow","!] Please wait...");
+					echo "\n".color("yellow","!] Claim Voucher cashback ALFAMART");
+					echo "\n".color("yellow","!] Beliin Gw rokok Lah...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
 						sleep(1);

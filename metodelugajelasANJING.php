@@ -2,14 +2,16 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("green"," =================================== \n");
+
 echo color("red"," ******** PADA GILA METODE LU ANJING *********  \n");
+
 
 echo color("green"," Auto Sistem Regist Cs Gojek Kartu Fresh ✓ BCR \n");
 
-echo color("green"," ============= ANTI METODE F*CK ============ \n");
-echo " °°°°° Created By :  Aldi & epen crot ces Ahh °°°°° \n";
+echo color("yellow"," ============= ANTI METODE F*CK ============ \n");
+echo " Created by : °°°°° Aldi & epen crot ces Ahh °°°°° \n";
 
-echo " Time       : ".date('d-m-Y||H:i:s')." \n";
+echo " Waktu      : ".date('d-m-Y||H:i:s')." \n";
 echo color("green"," =================================== \n");
 
 //	function change(){

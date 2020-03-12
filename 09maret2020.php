@@ -23,7 +23,7 @@ $pass = ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "mrubay" || $user == "Reynaldi MM" || $user == "reyartimagination" || $user == "epen" || $user == "gultik")
+if($user == "mrubay" || $user == "reynaldi" || $user == "reyartimagination" || $user == "epen" || $user == "gultik")
 {
 	echo "\e[92m╚══════════════════════════════════╝\n";
 	echo "\e[92m╔══════════════════════════════════╗\n";

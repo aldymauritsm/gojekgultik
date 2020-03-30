@@ -4,7 +4,7 @@ include "function.php";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[92m| __\e[93mDaftar\e[92m_\e[93mAkun\e[92m_\e[93m+\e[92m_\e[93mAuto\e[92m_\e[93mClaim\e[92m_\e[93mVoucher\e[92m_\e[93mFood\e[92m__|\n";
 echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[93m-_•\e[92m______________|\n";
-echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mADMIN\e[92m_|\n";
+echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mRtiga\e[92m_|\n";
 echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[91m:gojekgultik\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[91m:github.com/aldymauritsm\e[92m___________|\n";
 echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆Gojek\e[92m_\e[93m-\e[92m_\e[93mVersi 3.48.2\e[92m_\e[93m21∆\e[92m____________|\n";
@@ -23,7 +23,7 @@ $pass = ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "mrubay" || $user == "reynaldi" || $user == "reyartimagination" || $user == "epen" || $user == "gultik")
+if($user == "Rtiga")
 {
 	echo "\e[92m╚══════════════════════════════════╝\n";
 	echo "\e[92m╔══════════════════════════════════╗\n";
@@ -201,7 +201,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("white","========( PIN MU = 112233 )========")."\n";
+         echo color("white","========( PIN MU = 789565 )========")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";

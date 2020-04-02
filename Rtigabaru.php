@@ -3,24 +3,24 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m___________________________________________________________\n";
-echo "\e[96m ***       *** \n";
-echo "\e[96m  ***     ***  \n";
-echo "\e[96m   ***   ***   \n";
-echo "\e[96m    *** ***    \n";
-echo "\e[96m      *** **  ** *****  ** **** ****** ** ****      ***\n";
-echo "\e[96m      *** **  ** **   * ** **     **   ** **  *    *   *\n";
-echo "\e[96m      *** **  ** **   * **   **   **   ** ** *    *******\n";
-echo "\e[96m      ***  ****  *****  ** ****   **   ** **  ** **     **\n";
+echo "\e[96m ****** \n";
+echo "\e[96m *** ***  \n";
+echo "\e[96m ***  ***   \n";
+echo "\e[96m ***  ***    \n";
+echo "\e[96m *** ***   *******  *   *****     **\n";
+echo "\e[96m ***  ***     *     *  *         *  *\n";
+echo "\e[96m ***   ***    *     *  *   **   ******\n";
+echo "\e[96m ***    ***   *     *   ****   *      *\n";
 echo "\e[96m____________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m________________\n";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
-echo "\e[96m  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®\n";
-echo "\e[96m  ®\e[95m🔑  1. VOUCHER GOFOOD EATLAH          🔑 \e[96m®\n";
-echo "\e[96m  ®\e[95m🔑  2. VOUCHER GOFOOD 15K MINBEL 30K  🔑 \e[96m®\n";
-echo "\e[96m  ®\e[95m🔑  3. VOUCHER GOFOOD 10K MINBEL 30K. 🔑 \e[96m®\n";
-echo "\e[96m  ®\e[95m🔑  4. VOUCHER GOFOOD 10k 3 BIJI.     🔑 \e[96m®\n";
-echo "\e[96m  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®\n";
+echo "\e[96m  =======================================================\n";
+echo "\e[96m  =\e[95m🇮🇩   1. VOUCHER GOFOOD EATLAH ✓          🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m🇮🇩   2. VOUCHER GOFOOD 15K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m🇮🇩   3. VOUCHER GOFOOD 10K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m🇮🇩   4. VOUCHER GOFOOD DASAR BIASA ✓     🇮🇩 \e[96m=\n";
+echo "\e[96m  =======================================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[95m Sudah Punya User Login Belum ?: ";	
 $pilihy = trim(fgets(STDIN));
@@ -33,7 +33,7 @@ $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "11" || $user == "22" || $user == "33" || $user == "44" || $user == "55" || $user == "66" || $user == "77")
+if($user == "Rtiga")
 {
 	echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -100,7 +100,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM JHOND🛠▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM VOUCHER GOJEK🛠▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("nevy","🔒▶️ Claim voc EATLAH");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
@@ -222,7 +222,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 789565 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";

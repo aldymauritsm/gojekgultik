@@ -16,13 +16,13 @@ echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
 echo "\e[96m  ==============================================\n";
-echo "\e[96m  =\e[95m🇮🇩   1. VOUCHER GOFOOD EATLAH ✓          🇮🇩 \e[96m=\n";
-echo "\e[96m  =\e[95m🇮🇩   2. VOUCHER GOFOOD 15K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
-echo "\e[96m  =\e[95m🇮🇩   3. VOUCHER GOFOOD 10K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
-echo "\e[96m  =\e[95m🇮🇩   4. VOUCHER GOFOOD DASAR BIASA ✓     🇮🇩 \e[96m=\n";
-echo "\e[96m  =======================================================\n";
+echo "\e[96m  =\e[95m 🤸  1. VOUCHER GOFOOD EATLAH ✓          🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD 10K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  4. VOUCHER GOFOOD DASAR BIASA ✓     🇮🇩 \e[96m=\n";
+echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[95m Sudah Punya User Login Belum ?: ";	
+echo "\e[95m Sudah Punya User Id (Y/N ?: ";	
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -56,7 +56,7 @@ goto login;
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[96m            (Selamat Datang $input)               \n";
+echo "\e[96m            (Halo Apa Kabarmu $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
@@ -102,7 +102,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         save("token.txt",$token);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM VOUCHER GOJEK🛠▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("nevy","🔒▶️ Claim voc EATLAH");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("yellow","⏳▶️ Sabar");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
@@ -116,7 +116,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
         echo "\n".color("nevy","🔒▶️ Claim voc GOFOOD A");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("yellow","⏳▶️ Sabar");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -130,7 +130,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
         echo "\n".color("nevy","🔒▶️ Claim voc GOFOOD B");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("yellow","⏳▶️ Sabar");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
@@ -138,8 +138,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420B"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
-        echo "\n".color("nevy","🔒▶️ Claim voc CASHBACK GOFOOD C");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("nevy","🔒▶️ Claim voc Dasar");
+        echo "\n".color("yellow","⏳▶️ Sabar");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -218,11 +218,11 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("purple","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 789565 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY KAMU ADALAH = 789565 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
@@ -237,15 +237,15 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          }
          }
          }else{
-         echo color("red","-] Otp yang anda input salah");
+         echo color("red","-] OTP nya salah coba cek lagi");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("purple","!] Silahkan input kembali\n");
+         echo color("purple","!] Coba input lagi\n");
          goto otp;
          }
          }else{
-         echo color("red","-] Nomor sudah teregistrasi");
+         echo color("red","-] Nomor udah keregist.");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("purple","!] Silahkan registrasi kembali\n");
+         echo color("purple","!] Coba Nomer Fresh Lainnya \n");
          goto ulang;
          }
 //  }

@@ -3,15 +3,15 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_________________________________________________________\n";
-echo "\e[96m ****** \n";
-echo "\e[96m *** ***  \n";
+echo "\e[96m ******      Auto Regist + Set Pin Gopay\n";
+echo "\e[96m *** ***.       Gunakan Dengan Bijak\n";
 echo "\e[96m ***  ***   \n";
 echo "\e[96m ***  ***    \n";
 echo "\e[96m *** ***   *******  *   *****     **\n";
 echo "\e[96m ***  ***     *     *  *         *  *\n";
 echo "\e[96m ***   ***    *     *  *   **   ******\n";
 echo "\e[96m ***    ***   *     *   ****   *      *\n";
-echo "\e[96m____________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m________________\n";
+echo "\e[96m_________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m________________\n";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
@@ -49,7 +49,7 @@ else
 		echo "\e[96m[🚫]        \e[91mMasukkan User Registrasi      \e[96m [🚫]\n";
 	        echo "\e[96m[🚫]              \e[91m⚠️ WARNING ⚠️             \e[96m [🚫]\n";
 		echo "\e[96m[🚫]           \e[91mSEGERA MINTA IZIN          \e[96m [🚫]\n";
-	        echo "\e[96m[🚫]             \e[91m@Amartapura91            \e[96m [🚫]\n";
+	        echo "\e[96m[🚫]             \e[91m@Rtiga Termux       \e[96m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }

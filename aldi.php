@@ -1,7 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-include "functionjabo.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_______________________________________________________\n";
 echo "\e[96m ******      Auto Regist + Set Pin Gopay\n";

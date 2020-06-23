@@ -17,7 +17,7 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m  =\e[95m 🤸  1. VOUCHER Eatlah ✓           🤪 \e[96m=\n";
-echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 20+10+ Gobiz ✓ 🤪 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 20+10 All Merchant Partner ✓ 🤪 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD Voc Dasar ✓ 🤪 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  4. VOUCHER ??? ✓     🤪 \e[96m=\n";
 echo "\e[96m  ==============================================\n";
@@ -100,7 +100,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Akses token Lo Nih Boy : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠Auto Calim Voucher Gojek🛠▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠 Salim Sama Orang Kantor Gojek🛠▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("nevy","🔒▶️ Claim Voc GOFOOD");
         echo "\n".color("yellow","⏳▶️ Sabar Boy");
         for($a=1;$a<=3;$a++){

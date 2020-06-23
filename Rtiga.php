@@ -7,7 +7,7 @@ echo "\e[92m| ___________\e[93m•_+\e[92m_\e[93mBuat\e[92m_\e[93mPIN\e[92m_\e[9
 echo "\e[92m| _\e[91mUNTUK\e[92m_\e[91mREGISTRASI\e[92m_\e[91mSILAHKAN\e[92m_\e[91mHUBUNGI\e[92m_\e[91mRtiga\e[92m_|\n";
 echo "\e[92m| ___\e[93mTELEGRAM\e[92m_\e[91m:gojekgultik\e[92m___________________|\n";
 echo "\e[92m| ___\e[93mGITHUB\e[92m___\e[91m:github.com/aldymauritsm\e[92m___________|\n";
-echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆Gojek\e[92m_\e[93m-\e[92m_\e[93mVersi 3.48.2\e[92m_\e[93m21∆\e[92m____________|\n";
+echo "\e[92m| ___\e[93mVersion\e[92m__\e[91m:∆Gojek\e[92m_\e[93m-\e[92m_\e[93mVersi 3.55.4\e[92m_\e[93m21∆\e[92m____________|\n";
 echo "\e[92m| ___\e[93mTime\e[92m_____\e[93m:".date('[d-m-Y] [H:i:s]')."\e[92m_____|\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\n";
@@ -197,7 +197,7 @@ echo "\e[93m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("red","?] SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("red","?] SET PIN SEKALIAN BIAR AMAN !!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){

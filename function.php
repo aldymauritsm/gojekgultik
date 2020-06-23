@@ -3,7 +3,7 @@
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
 
 $header[] = "Host: api.gojekapi.com";
-$header[] = "User-Agent: okhttp/3.10";
+$header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
@@ -12,7 +12,7 @@ $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
 $header[] = "X-Location: -5.147665,119.4327313";
-$header[] = "X-Location-Accuracy: 1.0";
+$header[] = "X-Location-Accuracy: 10.0";
 if ($pin):
 $header[] = "pin: $pin";
     endif;

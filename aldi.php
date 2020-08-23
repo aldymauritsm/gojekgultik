@@ -81,6 +81,7 @@ $accesstoken = $json['access_token'];
 date_default_timezone_set('Asia/Jakarta');
 include "functionA.php";
 $token = $accesstoken; 
+
          echo "\n"."\e[7m\e[31m S\e[0m"."\e[7m\e[31mET PIN\e[0m"."\e[7m\e[31m ?? \e[0m";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == ""){
@@ -232,4 +233,6 @@ or$r_1872009285==18 or$r_1872009285==14 or$r_1872009285==11 or$r_1872009285==8 o
          }
          }
          }
+         
+         
          

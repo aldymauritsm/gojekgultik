@@ -5,13 +5,10 @@ include "functiony.php";
 ulang:
 // function change(){
 os.system('clear');
-echo color("red","* NOT SURRENDER TEAM \n");
-echo color("red","* NOT SURRENDER TEAM \n");
-echo color("green","* NOT SURRENDER TEAM \n");
-echo color("green","* NOT SURRENDER TEAM \n");
-echo color("blue","* NOT SURRENDER TEAM \n");
-echo color("blue","* NOT SURRENDER TEAM \n");
-echo color("white","* By Region Bandung \n");
+echo color("red","* simsalabim-PATI \n");
+echo color("red","* simsalabim-PATI \n");
+echo color("white","* simsalabim-PATI \n");
+echo color("white","* simsalabim-PATI \n");
 echo color("green","* Time : ".date('[d-m-Y] [H:i:s]')." \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -57,7 +54,7 @@ echo color("green","* Time : ".date('[d-m-Y] [H:i:s]')." \n");
 }
 }
 {
-echo color("red","* Lain Token Listrik \n");
+echo color("red","* TOKEN KODE \n");
 
 $ydf = new ydf();
 /** 
@@ -71,7 +68,7 @@ $json = json_decode($getOTPToken, true);
 $OTPToken = $json['data']['otp_token'];
 echo color("blue","* Kode SMS: ");
 $otpCode = trim(fgets(STDIN));
-echo color("purple","Lain Token Listrik Nyakk : ");
+echo color("purple","Token id : ");
 echo $OTPToken;
 $getAccesstoken = $ydf->getAuthToken($OTPToken, $otpCode);
 $json = json_decode($getAccesstoken, true);
@@ -85,13 +82,13 @@ include_once ('functiony.php');
 $token = $accesstoken;
         {
         echo color("red","~Klaim Voucher~");
-        echo "\n".color("green","* Klaim Voucher Gombret");
-        echo "\n".color("blue","* Dagoan heula..");
+        echo "\n".color("white","* Klaim Voucher GOJEK");
+        echo "\n".color("blue","* TUNGGU NDISIK LUR..");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(5);
         }
-        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADI5"}');
+        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HARIJADIMART"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","* Message: ".$message);

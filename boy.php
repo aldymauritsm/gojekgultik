@@ -1,7 +1,7 @@
 <?php
 #Decompile by Nariox
 date_default_timezone_set('Asia/Jakarta');
-include "functiony.php";
+include "function.php";
 ulang:
 // function change(){
 os.system('clear');
